@@ -3,14 +3,16 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 
-.row{
-    margin-top:6rem;
-    display:flex;
-    justify-content: center;
+.container{
+width:1000px;
+margin-top:80px;
+margin-left:auto;
+margin-right:auto;
 }
 
-.col {
-
+.row{
+    display:flex;
+    margin-bottom:0px;
 }
 
 .image {
@@ -19,4 +21,24 @@
 
 .active {
     display: block;
+ }
+
+ .login-bar{
+    width:1000px;
+    background-color: #FFCC54;
+    display:flex;
+    justify-content: right;
+    // padding-bottom:25px;
+ }
+
+ button{
+    margin-top:10px;
+    border:1px solid #FFCC54;
+    background-color: #FFCC54;
+    font-size: 2rem;
+    color: black;
+    padding-bottom:15px;
+ }
+ button:hover{
+     color: #ec83c3;
  }

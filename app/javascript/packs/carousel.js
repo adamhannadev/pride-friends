@@ -10,7 +10,7 @@ setInterval(function () {
     }
     images[current].classList.add("active");
     console.log(`Current image id is - ${current}`);
-}, 10000);
+}, 8000);
 
 
 
