@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+@font-face {
+	font-family: "Kollektif";
+	src: url("../fonts/Kollektif.ttf") format("truetype");
+}
+
+body{
+font-family: 'Kollektif';
+}
 
 .container{
 width:1000px;
@@ -13,31 +21,46 @@ margin-right:auto;
 .row{
     display:flex;
     margin-bottom:0px;
+    background-color: #FFCC54;
 }
 
-.image {
+.image{
     display: none;
 }
 
 .active {
     display: block;
  }
+ #content{
+     margin-left:auto;
+     margin-right:auto;
+ }
 
  .nav-bar{
+    margin-top:5px;
     width:1000px;
     background-color: #FFCC54;
     display:flex;
     justify-content: right;
  }
 
- button{
+ .button{
     margin-top:10px;
     border:1px solid #FFCC54;
     background-color: #FFCC54;
     font-size: 2rem;
     color: black;
     padding-bottom:15px;
+    font-family: 'Kollektif';
  }
- button:hover{
+ .button:hover{
+     color: #ec83c3;
+ }
+
+ a{
+     color:black;
+     text-decoration: none;
+ }
+ a:hover{
      color: #ec83c3;
  }

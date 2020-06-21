@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PrideFriends</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      <a href="/">
+        <%= image_tag('pride_friends.png') %>
+        </a>
+      </div>
+      <div class="col" id="images">
+        <%= yield %>
+      </div>
+    </div>
+  <div class="nav-bar">
+    <%= button_to "log in", user_session_path, :method => "get", :class => "button" %>
+  </div>  
+</div>
+  </body>
+</html>
