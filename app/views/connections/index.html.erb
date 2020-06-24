@@ -1,0 +1,27 @@
+<h1><%= current_user.email %></h1>
+
+<table>
+<thead>
+    <tr>
+        <th>Names</th>
+        <th>Handle</th>
+        <th>Memory</th>
+        <th></th>
+        <th></th>
+    </tr>
+</thead>
+<tbody>
+<% @connections.each do |c| %>
+    <tr>
+        <td><%= link_to c.names, connection_path(c) %></td>
+        <td><%= c.insta %></td>
+        <td><%= c.memory %></td>
+        <td><%= button_to "x", connection_path(c), method: :delete %></td>
+    </tr>
+    <% end %>
+</tbody>
+</table>
+
+<%= button_to "New Connection", new_connection_path, :method => "get", :class => "button" %>
+
+

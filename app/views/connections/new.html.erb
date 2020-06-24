@@ -1,2 +1,25 @@
-<h1>Connections#new</h1>
-<p>Find me in app/views/connections/new.html.erb</p>
+<h1>Create a New Connection</h1>
+<p>Fill in your new connection's name, instagram handle and a brief memory of where you met them.</p>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <p><%= error %></p>
+  <% end %>
+<% end %>
+
+<%= form_with model: @connection do |f| %>
+<div class="field">
+  <%= f.label(:names, "Name(s)") %>
+  <%= f.text_field(:names) %>
+</div>
+<div class="field">
+  <%= f.label(:insta, "Insta Handle") %>
+  <%= f.text_field(:insta) %>
+</div>
+<div class="field">
+  <%= f.label(:memory, "Memory") %>
+  <%= f.text_area(:memory) %>
+</div>
+
+  <%= f.submit %>
+<% end %>

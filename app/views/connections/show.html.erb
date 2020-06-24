@@ -1,4 +1,6 @@
 <h1><%= current_user.email %></h1>
-<% @connections.each do |c| %>
-    <%= c.names %>
-<% end %>
+<h3><%= @connection.names %></h3>
+<p><%= @connection.insta %></p>
+<p><%= @connection.memory %></p>
+
+<%= link_to "Back" , :back %>
