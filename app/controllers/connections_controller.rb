@@ -9,7 +9,7 @@ class ConnectionsController < ApplicationController
   def create
     @connection = Connection.new(params.require(:connection).permit(:names, :insta, :memory))
     @connection.user = current_user
-    @connection.connection_date = Time.now.year
+    @connection.connection_date = Time.now
     if @connection.save
       redirect_to connections_path
     else

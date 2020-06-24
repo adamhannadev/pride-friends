@@ -25,8 +25,10 @@
     </div>
   <div class="nav-bar">
     <%= button_to "log in", user_session_path, :method => "get", :class => "button" %>
+    <% if current_user %>
     <%= button_to "log out", destroy_user_session_path, :method => "delete", :class => "button" %>
     <%= button_to "connections", connections_path, :method => "get", :class => "button" %>
+    <% end %>
   </div>  
 </div>
   </body>
