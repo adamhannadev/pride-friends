@@ -2,6 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-h1{
+h1 {
     text-align: center;
+}
+
+legend {
+    padding-bottom:4px;
+}
+
+
+td{
+    padding:8px;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+}
+
+
+.btn{
+    border:none ;
+    padding:10px;
+    color:lightpink;
+    font-weight: bold;
+    background-color: white;
+}
+.btn:hover{
+    color:white;
+    background-color:lightpink;
+}
+
+input[type=text]{
+   width:80%;
+}
+textarea {
+    width:82%;
+}
+.button-group{
+    display: flex;
 }

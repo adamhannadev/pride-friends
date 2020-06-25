@@ -34,9 +34,11 @@ margin-right:auto;
 .active {
     display: block;
  }
+
  #content{
      margin-left:auto;
      margin-right:auto;
+     flex:1;
  }
 
  .nav-bar{
@@ -66,4 +68,8 @@ margin-right:auto;
  }
  a:hover{
      color: #ec83c3;
+ }
+
+ table{
+     margin-bottom:20px;
  }

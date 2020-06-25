@@ -1,6 +1,10 @@
-<h1><%= current_user.email %></h1>
-<h3><%= @connection.names %></h3>
-<p><%= @connection.insta %></p>
+<h1><%= @connection.names %></h1>
+<h2><%= @connection.insta %></h2>
 <p><%= @connection.memory %></p>
 
-<%= link_to "Back" , :back %>
+<div class="button-group">
+<%= button_to "Back", connections_path, method: "get", :class => "btn"%>
+<%= button_to "Delete", connection_path(@connection), method: "delete", :class => "btn"%>
+</div>
+
+

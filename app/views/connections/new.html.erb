@@ -9,17 +9,17 @@
 
 <%= form_with model: @connection do |f| %>
 <div class="field">
-  <%= f.label(:names, "Name(s)") %>
+  <%= f.label(:names, "Name(s)") %><br>
   <%= f.text_field(:names) %>
 </div>
 <div class="field">
-  <%= f.label(:insta, "Insta Handle") %>
+  <%= f.label(:insta, "Insta Handle") %><br>
   <%= f.text_field(:insta) %>
 </div>
 <div class="field">
-  <%= f.label(:memory, "Memory") %>
+  <%= f.label(:memory, "Memory") %><br>
   <%= f.text_area(:memory) %>
 </div>
 
-  <%= f.submit %>
+  <%= f.submit :class => "btn"%>
 <% end %>
