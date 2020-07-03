@@ -1,12 +1,13 @@
 <h1>Hello <%= current_user.name %>!</h1>
 
+<% if @connections.length > 0 %>
 <table>
-<legend>Connections - Pride 2020</legend>
+<legend>Pride 2020</legend>
 <thead>
     <tr>
         <th>Names</th>
         <th>Handle</th>
-        <th></th>
+        <th>Memory</th>
         <th></th>
         <th></th>
     </tr>
@@ -21,6 +22,7 @@
     <% end %>
 </tbody>
 </table>
+<% end %>
 
 <%= button_to "New Connection", new_connection_path, :method => "get", :class => "btn" %>
 
