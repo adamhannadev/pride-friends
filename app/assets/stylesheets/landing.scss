@@ -39,6 +39,7 @@ margin-right:auto;
      margin-left:auto;
      margin-right:auto;
      flex:1;
+     padding-right:10px;
  }
 
  .nav-bar{
@@ -46,7 +47,7 @@ margin-right:auto;
     width:1000px;
     background-color: #FFCC54;
     display:flex;
-    justify-content: right;
+    justify-content: space-between;
  }
 
  .button{
@@ -57,6 +58,7 @@ margin-right:auto;
     color: black;
     padding-bottom:15px;
     font-family: 'Kollektif';
+    padding-left:10px;
  }
  .button:hover{
      color: #ec83c3;
@@ -72,9 +74,6 @@ margin-right:auto;
 
  th{
      text-align: left;
- }
- td{
-     test-align: left;
  }
  table{
      margin-bottom:20px;
